@@ -5,55 +5,55 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\BepInEx\core\0Harmony.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\BepInEx\core\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\Poly Bridge 2_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\Poly Bridge 2_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\BepInEx\core\BepInEx.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\BepInEx\core\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx.Harmony">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\BepInEx\core\BepInEx.Harmony.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\BepInEx\core\BepInEx.Harmony.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx.Preloader">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\BepInEx\core\BepInEx.Preloader.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\BepInEx\core\BepInEx.Preloader.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\BepInEx\core\Mono.Cecil.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\BepInEx\core\Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Mdb">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\BepInEx\core\Mono.Cecil.Mdb.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\BepInEx\core\Mono.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Pdb">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\BepInEx\core\Mono.Cecil.Pdb.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\BepInEx\core\Mono.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Rocks">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\BepInEx\core\Mono.Cecil.Rocks.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\BepInEx\core\Mono.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="MonoMod.RuntimeDetour">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\BepInEx\core\MonoMod.RuntimeDetour.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\BepInEx\core\MonoMod.RuntimeDetour.dll</HintPath>
     </Reference>
     <Reference Include="MonoMod.Utils">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\BepInEx\core\MonoMod.Utils.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\BepInEx\core\MonoMod.Utils.dll</HintPath>
     </Reference>
     <Reference Include="PolyTechFramework">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\BepInEx\plugins\PolyTechFramework.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\BepInEx\plugins\PolyTechFramework.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\Poly Bridge 2_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\Poly Bridge 2_Data\Managed\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\Poly Bridge 2_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\Poly Bridge 2_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\Poly Bridge 2_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\Poly Bridge 2_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\Poly Bridge 2_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\Poly Bridge 2_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>..\..\..\..\Steam Library\steamapps\common\Poly Bridge 2\Poly Bridge 2_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>..\Poly Bridge 2\Poly Bridge 2_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

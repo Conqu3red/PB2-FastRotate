@@ -1,25 +1,21 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
 using HarmonyLib;
-using Mono.Cecil.Cil;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace FastRotate
 {
     [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
-    //[BepInDependency(PolyTechFramework.PolyTechMain.pluginGuid, BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency(PolyTechFramework.PolyTechMain.PluginGuid, BepInDependency.DependencyFlags.HardDependency)]
     [BepInProcess("Poly Bridge 2.exe")]
-    public class PluginMain : BaseUnityPlugin
+    public class PluginMain : PolyTechFramework.PolyTechMod
     {
         [Header("Hello decompiler!")]
-        public const String PluginGuid = "polytech.fastrotate";
-        public const String PluginName = "Fast Rotate";
-        public const String PluginVersion = "0.5.0";
+        public new const String PluginGuid = "polytech.fastrotate";
+        public new const String PluginName = "Fast Rotate";
+        public new const String PluginVersion = "0.6.0";
 
         private static BepInEx.Logging.ManualLogSource staticLogger;
 
@@ -60,9 +56,21 @@ namespace FastRotate
                 EditClipboardUI(ShowUnroundedDegs.Value);
             };
 
+            isEnabled = ModIsEnabled.Value;
+
             var harmony = new Harmony(PluginGuid);
             harmony.PatchAll(Assembly.GetExecutingAssembly());
-            //PolyTechMain.registerMod(this);
+            PolyTechFramework.PolyTechMain.registerMod(this);
+        }
+
+        public override void enableMod()
+        {
+            ModIsEnabled.Value = true;
+        }
+
+        public override void disableMod()
+        {
+            ModIsEnabled.Value = false;
         }
 
         public static void EditClipboardUI(bool enabled)
@@ -104,13 +112,7 @@ namespace FastRotate
         static bool ConfigKeyIsDown(ConfigEntry<KeyboardShortcut> key)
         {
             if (!ModIsEnabled.Value) { return false; }
-
-            bool modifiersdown = true;
-            foreach (KeyCode modifier in key.Value.Modifiers)
-            {
-                if (Input.GetKey(modifier) == false) { modifiersdown = false; }
-            }
-            return Input.GetKey(key.Value.MainKey) && modifiersdown;
+            return key.Value.IsPressed();
         }
 
         [HarmonyPatch(typeof(ClipboardManager), "ContinuousRotateLeft")]
